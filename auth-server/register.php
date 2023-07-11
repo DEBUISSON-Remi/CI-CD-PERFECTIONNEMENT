@@ -6,6 +6,7 @@ function register()
     $login = filter_input(INPUT_POST, "login");
     $password = filter_input(INPUT_POST, "password");
 
+    
     // On vérifie que le login est unique
     $pdo = new PDO("mysql:host=localhost:3306;dbname=eanp2023api", "root", "");
     $stmtVerif = $pdo->prepare("SELECT * FROM users WHERE login = :login");

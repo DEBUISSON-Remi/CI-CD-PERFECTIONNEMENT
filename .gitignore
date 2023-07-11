@@ -1,0 +1,4 @@
+auth-client/vendor/
+auth-server/vendor/
+auth-client/composer.lock
+auth-server/composer.lock
